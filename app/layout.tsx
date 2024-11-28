@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { AppNavigation } from "@/components/app-navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AppNavigation />
+        <div className="2xl:flex justify-center">
+          <div className="2xl:w-10/12">{children}</div>
+        </div>
+      </body>
     </html>
   );
 }
