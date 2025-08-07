@@ -87,6 +87,10 @@ const config = {
             "background-position": "calc(100% + var(--shimmer-width)) 0",
           },
         },
+        marquee: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -94,6 +98,7 @@ const config = {
         backgroundPositionSpin:
           "background-position-spin 3000ms infinite alternate",
         shimmer: "shimmer 8s infinite",
+        marquee: "marquee 14s linear infinite",
       },
     },
   },

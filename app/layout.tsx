@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppNavigation } from "@/components/app-navigation";
+import { SpotifyWiget } from "@/components/spotify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <AppNavigation />
         <div className="2xl:flex justify-center">
-          <div className="2xl:w-10/12">{children}</div>
+          <div className="2xl:w-10/12 overscroll-none">{children}</div>
         </div>
+        <SpotifyWiget />
       </body>
     </html>
   );

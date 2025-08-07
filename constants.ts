@@ -8,7 +8,8 @@ export const workExperience = [
   {
     id: "astonmartin",
     name: "Aston Martin Aramco F1 Team",
-    description: "Working with the performance engineering team.",
+    description:
+      "Working with the performance software team to provide interactive and high functioning tools to teams within perfomance engineering team to support and optimise current and next versions of the race car.",
     dates: "December 2024 - Present",
     location: "Silverstone, United Kingdom",
     role: "Software Engineer",
@@ -48,10 +49,34 @@ export const workExperience = [
     id: "causal",
     name: "Causal Funnel",
     description:
-      "Worked with a team of ex-Apple and Microsoft data scientists to build an eCommerce funnel optimization platform. Developed interactive visualizations using Angular, optimized client-side performance for handling large datasets, and implemented scalable Firebase Cloud Functions for real-time dashboards. Also integrated Google PSI, managed cookies, and enabled advanced data filtering.",
+      "Worked with a team of ex-Apple and Microsoft senior data scientists to build an eCommerce funnel optimization platform. Developed interactive visualizations using Angular, optimized client-side performance for handling large datasets, and implemented scalable Firebase Cloud Functions for real-time dashboards. Also integrated Google PSI, managed cookies, and enabled advanced data filtering.",
     dates: "July, 2022 - November, 2023",
     location: "San Francisco, USA (Remote)",
     role: "Software Development Engineer Intern",
     image: causalfunnel,
   },
+];
+
+export const techStack = [
+  "typescript",
+  "javascript",
+  "angular",
+  "tailwindcss",
+  "redux",
+  "sass",
+  "graphql",
+  "java",
+  "react",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "nextdotjs",
+  "firebase",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "git",
+  "figma",
+  "ios",
 ];

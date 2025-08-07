@@ -5,7 +5,7 @@ import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 
 export const SocialNavigation = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mt-6 justify-center">
       <FaLinkedin
         className="mr-2 text-3xl text-primary cursor-pointer"
         // onClick={() =>

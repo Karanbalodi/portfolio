@@ -7,7 +7,7 @@ import { NavigationItem } from "./navigation-item";
 export function AppNavigation() {
   const pathname = usePathname();
   return (
-    <nav className="h-32 flex items-center absolute left-1/2 -translate-x-2/4">
+    <nav className="sm:h-32 h-24 flex items-center absolute left-1/2 -translate-x-2/4">
       <div className="w-64 flex justify-between">
         <NavigationItem title="Work" isActive={pathname === '/'} path="/"/>
         <NavigationItem title="About" isActive={pathname === '/about'} path="/about"/>
