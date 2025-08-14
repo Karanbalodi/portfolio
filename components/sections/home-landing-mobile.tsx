@@ -21,7 +21,7 @@ export const HomeLandingMobile = () => (
 
       <div className="flex flex-col justify-center mt-6">
         <p className="text-primary text-xl font-medium subpixel-antialiased text-center leading-7">
-          Namaste 🙏🏻 I'm Karan
+          Namaste 🙏🏻 I&apos;m Karan
           <br /> A{" "}
           <Highlighter
             className="bg-pink-100 rounded px-1 text-pink-800"

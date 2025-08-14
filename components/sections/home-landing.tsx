@@ -10,7 +10,7 @@ export const HomeLanding = () => (
     <main className="pb-10 flex sm:flex-row sm:justify-between flex-col select-none">
       <div className="mt-10 flex flex-col justify-center sm:mt-0 sm:mr-20">
         <p className="p-force-lineheight text-primary text-2xl sm:text-5xl text-2xl font-medium subpixel-antialiased">
-          Namaste 🙏🏻 I'm Karan. A{" "}
+          Namaste 🙏🏻 I&apos;m Karan. A{" "}
           <Highlighter
             className="bg-pink-100 rounded px-1 text-pink-800"
             action="underline"

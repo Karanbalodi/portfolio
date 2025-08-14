@@ -9,7 +9,7 @@ const Photography = () => {
     <>
       <div className="flex flex-col justify-center sm:mx-24 border-b border-gray-200 pb-24 mt-28">
         <q className="text-center text-dark-gray text-md sm:text-3xl font-medium">
-          Life isn't a matter of milestones, but of moments.
+          Life isn&apos;t a matter of milestones, but of moments.
         </q>
         <p className="text-center text-dark-gray text-xs sm:text-lg">
           - Rose Kennedy
