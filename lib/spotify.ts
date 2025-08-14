@@ -14,18 +14,18 @@ const getAccessToken = async () => {
       grant_type: "refresh_token",
       refresh_token: process.env.SPOTIFY_REFRESH_TOKEN!,
     }),
+    cache: "no-store", // Disable caching for this request
   });
-
   return res.json();
 };
 
 export const fetchSpotify = async (endpoint: string) => {
   const { access_token } = await getAccessToken();
-
   const res = await fetch(`https://api.spotify.com/v1/${endpoint}`, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
+    cache: "no-store", // Disable caching for this request
   });
 
   return res;

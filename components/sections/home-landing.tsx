@@ -3,6 +3,7 @@ import Me from "@/assets/me.webp";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { SocialNavigation } from "@/components/social-navigation";
+import { Highlighter } from "../magicui/highlighter";
 
 export const HomeLanding = () => (
   <section className="min-h-screen border-b border-gray-200 sm:mx-8 mx-4 flex items-center">
@@ -10,13 +11,21 @@ export const HomeLanding = () => (
       <div className="mt-10 flex flex-col justify-center sm:mt-0 sm:mr-20">
         <p className="p-force-lineheight text-primary text-2xl sm:text-5xl text-2xl font-medium subpixel-antialiased">
           Namaste 🙏🏻 I'm Karan. A{" "}
-          <span className="bg-pink-100 underline text-pink-800 rounded px-1">
+          <Highlighter
+            className="bg-pink-100 rounded px-1 text-pink-800"
+            action="underline"
+            color="oklch(45.9% 0.187 3.815)"
+          >
             Developer
-          </span>{" "}
+          </Highlighter>
           &{" "}
-          <span className="bg-green-100 underline text-green-800 rounded px-1">
+          <Highlighter
+            className="bg-green-100 rounded px-1 text-green-800"
+            action="underline"
+            color="oklch(43.2% 0.095 166.913)"
+          >
             Design enthusiast
-          </span>
+          </Highlighter>
           .
         </p>
         <AnimatedShinyText className="mt-4 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">

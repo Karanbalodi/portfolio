@@ -1,3 +1,4 @@
+import { Education } from "@/components/sections/home-education";
 import { HomeLanding } from "@/components/sections/home-landing";
 import { HomeLandingMobile } from "@/components/sections/home-landing-mobile";
 import { TechStack } from "@/components/sections/home-tech-stack";
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <WorkExperience />
       <TechStack />
+      <Education />
     </>
   );
 }

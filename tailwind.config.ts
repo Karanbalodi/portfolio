@@ -98,7 +98,7 @@ const config = {
         backgroundPositionSpin:
           "background-position-spin 3000ms infinite alternate",
         shimmer: "shimmer 8s infinite",
-        marquee: "marquee 14s linear infinite",
+        marquee: "marquee 12s linear infinite",
       },
     },
   },

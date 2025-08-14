@@ -2,6 +2,7 @@ import Image from "next/image";
 import AnimatedShinyText from "../magicui/animated-shiny-text";
 import { SocialNavigation } from "../social-navigation";
 import Me from "@/assets/me.webp";
+import { Highlighter } from "../magicui/highlighter";
 
 export const HomeLandingMobile = () => (
   <section className="border-b border-gray-200 mx-4 pb-12">
@@ -22,13 +23,22 @@ export const HomeLandingMobile = () => (
         <p className="text-primary text-xl font-medium subpixel-antialiased text-center leading-7">
           Namaste 🙏🏻 I'm Karan
           <br /> A{" "}
-          <span className="bg-pink-100 underline text-pink-800 rounded px-1">
+          <Highlighter
+            className="bg-pink-100 rounded px-1 text-pink-800"
+            action="underline"
+            color="oklch(45.9% 0.187 3.815)"
+          >
             Developer
-          </span>{" "}
+          </Highlighter>
           &{" "}
-          <span className="bg-green-100 underline text-green-800 rounded px-1">
+          <Highlighter
+            className="bg-green-100 rounded px-1 text-green-800"
+            action="underline"
+            color="oklch(43.2% 0.095 166.913)"
+          >
             Design enthusiast
-          </span>
+          </Highlighter>
+          .
         </p>
         <AnimatedShinyText className="mt-4 transition ease-out text-center">
           <span>💼 Software Engineer @ Aston Martin Aramco Formula 1 Team</span>
@@ -36,8 +46,6 @@ export const HomeLandingMobile = () => (
         <AnimatedShinyText className="mt-1 transition ease-out text-center">
           <span>📍 Silverstone, United Kingdom</span>
         </AnimatedShinyText>
-
-        {/* <p className="mt-6 text-dark-gray">We can connect here:</p> */}
         <SocialNavigation />
       </div>
     </main>
