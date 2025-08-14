@@ -3,13 +3,28 @@ import razorpay from "@/assets/razorpay.webp";
 import pokerbaazi from "@/assets/pokerbaazi.webp";
 import aston_martin from "@/assets/aston_martin.webp";
 import causalfunnel from "@/assets/causalfunnel.webp";
+import One from "@/assets/one.webp";
+import Two from "@/assets/two.webp";
+import Three from "@/assets/three.webp";
+import Four from "@/assets/four.webp";
+import Five from "@/assets/five.webp";
+import Six from "@/assets/six.webp";
+import Seven from "@/assets/seven.webp";
+import Eight from "@/assets/eight.webp";
+import Nine from "@/assets/nine.webp";
+import Ten from "@/assets/ten.webp";
+import Eleven from "@/assets/eleven.webp";
+import Twelve from "@/assets/twelve.webp";
+import Fourteen from "@/assets/fourteen.webp";
+import Fifteen from "@/assets/fifteen.webp";
+import Sixteen from "@/assets/sixteen.webp";
 
 export const workExperience = [
   {
     id: "astonmartin",
     name: "Aston Martin Aramco F1 Team",
     description:
-      "Working with the performance software team to provide interactive and high functioning tools to teams within perfomance engineering team to support and optimise current and next versions of the race car.",
+      "Working in the Performance Software Group at Aston Martin Formula One Team, where I help build tools that push the limits of racing performance and data visualization. I build various tools for teams like Aerodynamics and Vehicle Science to enable them to make a fast car.",
     dates: "December 2024 - Present",
     location: "Silverstone, United Kingdom",
     role: "Software Engineer",
@@ -57,19 +72,21 @@ export const workExperience = [
   },
 ];
 
-export const techStack = [
+export const techStackIcons = [
   "typescript",
   "javascript",
   "angular",
   "tailwindcss",
   "redux",
+  "mobx",
+  "electron",
   "sass",
   "graphql",
-  "java",
+  "opentelemetry",
   "react",
   "android",
   "html5",
-  "css3",
+  "css",
   "nodedotjs",
   "nextdotjs",
   "firebase",
@@ -79,4 +96,99 @@ export const techStack = [
   "git",
   "figma",
   "ios",
+];
+
+export const techStack = [
+  "React",
+  "React Native",
+  "NextJS",
+  "Typescript",
+  "Javascript",
+  "GraphQL",
+  "Redux/MobX",
+  "NodeJS",
+  "Firebase",
+  "Angular",
+  "Tailwind CSS",
+  "SASS",
+  "Opentelemetry",
+  "Java",
+  "Android",
+  "CSS",
+  "Vercel",
+  "ElectronJS",
+  "Testinglibrary",
+  "Jest",
+  "Figma",
+  "iOS",
+  "Webpack",
+  "Branch/Appsflyer",
+  "Grafana",
+];
+
+export const navigation = [
+  { title: "Home", path: "/" },
+  { title: "Blog", path: "/blog" },
+  { title: "Photography", path: "/photography" },
+];
+
+export const education = [
+  {
+    title: "Maharaja Surajmal Institute Of Technology, GGSIPU",
+    subtitle: "🗓 2018 - 2022 |  New Delhi, India 🇮🇳",
+    description: "Major: Information Technology",
+    aggregate: "8.90/10",
+    redirectUrl: "https://www.msit.in/",
+    color: "yellow",
+  },
+  {
+    title: "The Frank Anthony Public School",
+    subtitle: "🗓 2005 - 2017 |  New Delhi, India 🇮🇳",
+    description:
+      "Subjects: Mathematics, Physics, Chemistry, English, Computer Science",
+    aggregate: "85.3%",
+    redirectUrl: "https://fapsnewdelhi.net/",
+    color: "red",
+  },
+];
+
+export const blogs = [
+  {
+    title:
+      "What is a PWA and how to convert your React Native app into a PWA using Expo",
+    description:
+      "A progressive web app is a website that can be installed on the user device and can be used offline. The idea of a PWA was introduced by Steve Jobs in 2007 ...",
+    date: "June 2020",
+    readTime: "5 min read",
+    views: "4.5k+ views",
+    link: "https://medium.com/coox-tech/what-is-a-progressive-web-app-pwa-and-how-to-convert-your-react-native-app-into-a-pwa-using-expo-11540ff116a",
+  },
+  {
+    title:
+      "Javascript Interface(JSI): Overview and need for re-architecture of react native",
+    description:
+      "React Native is bundled with multiple advantages like cross-platform suppoert, OTA updates, live reload, cost efficiency etc but the biggest bottleneck in scaling ...",
+    date: "November 2022",
+    readTime: "5 min read",
+    views: "8k+ views",
+    link: "https://medium.com/@karanbalodi/javascript-interface-jsi-overview-and-need-for-re-architecture-of-react-native-6ab6a7b3f660",
+  },
+];
+
+export const photos = [
+  { url: One, location: "Golden Gate Bridge, San Francisco" },
+  { url: Fourteen, location: "Three Sisters, Oregon" },
+  { url: Two, location: "Lombard Street, San Francisco" },
+  { url: Three, location: "Astoria, Oregon" },
+  { url: Four, location: "Golden Gate Bridge, San Francisco" },
+  { url: Six, location: "Creater Lake, Oregon" },
+  { url: Nine, location: "Jammu, India" },
+  { url: Sixteen, location: "Pacific City, Oregon" },
+  { url: Seven, location: "Austin, Texas" },
+  { url: Eight, location: "Centre Island, Toronto" },
+  { url: Twelve, location: "Niagara Falls, Canada" },
+  { url: Eleven, location: "Notre-Dame Basilica, Montreal" },
+  { url: Ten, location: "Centre Island, Toronto" },
+  { url: Five, location: "Seattle, Washington" },
+  { url: Fifteen, location: "Cape Kiwanda, Oregon" },
 ];
