@@ -3,26 +3,34 @@ import Image from "next/image";
 export const SpotifyWiget = async () => {
   let track;
   let spotifyText = "";
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/now-playing`,
-    { cache: "no-store" }
-  );
-  const nowPlaying = await res.json();
-
-  if (nowPlaying?.isPlaying) {
-    track = nowPlaying;
-    spotifyText = `Currently Playing on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
-  } else {
-    // fallback to top track
-    const topRes = await fetch(
-      `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/top-tracks`,
-      {
-        cache: "no-store",
-      }
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/now-playing`,
+      { cache: "no-store" }
     );
-    const top = await topRes.json();
-    track = top.tracks[0];
-    spotifyText = `Top track on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
+    const nowPlaying = await res.json();
+
+    if (nowPlaying?.isPlaying) {
+      track = nowPlaying;
+      spotifyText = `Currently Playing on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
+    } else {
+      // fallback to top track
+      const topRes = await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/top-tracks`,
+        {
+          cache: "no-store",
+        }
+      );
+      const top = await topRes.json();
+      track = top.tracks[0];
+      spotifyText = `Top track on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
+    }
+  } catch (error) {
+    console.log(
+      "Error fetching Spotify data:",
+      error,
+      process.env.NEXT_PUBLIC_SITE_URL
+    );
   }
 
   return (
