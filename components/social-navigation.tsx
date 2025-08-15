@@ -35,7 +35,7 @@ export const SocialNavigation = () => {
         className="mr-2 text-4xl text-primary cursor-pointer"
         onClick={() => {
           window.open(
-            "mailto:karanbalodi1@gmail.com?subject=Hello Karan&body=Hi Karan. I would like to connect with you"
+            "mailto:karanbalodi1@gmail.com?subject=Hello Karan&body=Hi Karan. I would like to connect with you regarding ..."
           );
         }}
       />

@@ -33,9 +33,10 @@ export const SpotifyWiget = async () => {
     );
   }
 
+
   return (
     <div className="w-full h-6 bg-[#1db954] z-[9999] fixed top-0">
-      <div className="flex w-full">
+      <div className="flex w-full h-full">
         <div className="p-3 sm:block hidden">
           <Image
             src={track?.albumImageUrl}
