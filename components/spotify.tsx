@@ -9,7 +9,7 @@ export const SpotifyWiget = async () => {
       { cache: "no-store" }
     );
     const nowPlaying = await res.json();
-
+    console.log("Now Playing:", nowPlaying);
     if (nowPlaying?.isPlaying) {
       track = nowPlaying;
       spotifyText = `Currently Playing on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
@@ -32,7 +32,6 @@ export const SpotifyWiget = async () => {
       process.env.NEXT_PUBLIC_SITE_URL
     );
   }
-
 
   return (
     <div className="w-full h-6 bg-[#1db954] z-[9999] fixed top-0">
