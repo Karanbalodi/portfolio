@@ -15,6 +15,7 @@ export default function Blog() {
           description={blog.description}
           readTime={blog.readTime}
           views={blog.views}
+          redirectUrl={blog.link}
         />
       ))}
     </section>

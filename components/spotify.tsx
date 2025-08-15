@@ -1,32 +1,21 @@
 import { getNowPlaying } from "@/lib/get-now-playing";
+import { getTopTrack } from "@/lib/get-top-track";
 import Image from "next/image";
 
 export const SpotifyWiget = async () => {
-  let track;
+  let track = null;
   let spotifyText = "";
+
   try {
-    const nowPlaying = await getNowPlaying();
-    if (nowPlaying?.isPlaying) {
-      track = nowPlaying;
+    track = await getNowPlaying();
+    if (track && track?.isPlaying) {
       spotifyText = `Currently Playing on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
     } else {
-      // fallback to top track
-      const topRes = await fetch(
-        `https://portfolio-karan-balodis-projects.vercel.app/api/spotify/top-tracks`,
-        {
-          cache: "no-store",
-        }
-      );
-      const top = await topRes.json();
-      track = top.tracks[0];
+      track = await getTopTrack();
       spotifyText = `Top track on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
     }
   } catch (error) {
-    console.log(
-      "Error fetching Spotify data:",
-      error,
-      process.env.NEXT_PUBLIC_SITE_URL
-    );
+    spotifyText = "Spotify is not available right now.";
   }
 
   return (

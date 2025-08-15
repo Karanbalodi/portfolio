@@ -1,9 +1,14 @@
+'use client';
+
+import { redirect } from "next/navigation";
+
 interface BlogTileProps {
   title: string;
   date: string;
   views: string;
   description: string;
   readTime?: string;
+  redirectUrl?: string;
 }
 
 export const BlogTile = ({
@@ -12,15 +17,9 @@ export const BlogTile = ({
   views,
   description,
   readTime,
+  redirectUrl,
 }: BlogTileProps) => (
-  <div
-    className="cursor-pointer"
-    // onClick={() =>
-    // //   redirect(
-    // //     "https://medium.com/coox-tech/what-is-a-progressive-web-app-pwa-and-how-to-convert-your-react-native-app-into-a-pwa-using-expo-11540ff116a"
-    // //   )
-    // }
-  >
+  <div className="cursor-pointer" onClick={() => redirect(redirectUrl ?? "")}>
     <h1 className="text-primary font-medium text-xl mt-8">{title}</h1>
     <p className="text-dark-gray text-sm mt-3">
       ⏱ {readTime} | 👀 {views} | 🗓 {date}
