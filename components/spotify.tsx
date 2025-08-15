@@ -5,7 +5,7 @@ export const SpotifyWiget = async () => {
   let spotifyText = "";
   try {
     const res = await fetch(
-      `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/now-playing`,
+      `https://portfolio-karan-balodis-projects.vercel.app/api/spotify/now-playing`,
       { cache: "no-store" }
     );
     const nowPlaying = await res.json();
@@ -16,7 +16,7 @@ export const SpotifyWiget = async () => {
     } else {
       // fallback to top track
       const topRes = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/api/spotify/top-tracks`,
+        `https://portfolio-karan-balodis-projects.vercel.app/api/spotify/top-tracks`,
         {
           cache: "no-store",
         }
