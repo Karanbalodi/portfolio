@@ -1,15 +1,11 @@
+import { getNowPlaying } from "@/lib/get-now-playing";
 import Image from "next/image";
 
 export const SpotifyWiget = async () => {
   let track;
   let spotifyText = "";
   try {
-    const res = await fetch(
-      `https://portfolio-karan-balodis-projects.vercel.app/api/spotify/now-playing`,
-      { cache: "no-store" }
-    );
-    const nowPlaying = await res.json();
-    console.log("Now Playing:", nowPlaying);
+    const nowPlaying = await getNowPlaying();
     if (nowPlaying?.isPlaying) {
       track = nowPlaying;
       spotifyText = `Currently Playing on Spotify - ${track?.title} | ${track?.album} - ${track?.artist}`;
