@@ -3,12 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppNavigation } from "@/components/app-navigation";
 import { SpotifyWiget } from "@/components/spotify";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Karan Balodi | Portfolio",
-  description: "Karan Balodi's personal portfolio showcasing skills, projects, and experience.",
+  description:
+    "Karan Balodi's personal portfolio showcasing skills, projects, and experience.",
 };
 
 export default function RootLayout({
@@ -22,6 +24,7 @@ export default function RootLayout({
         <AppNavigation />
         <div className="2xl:flex justify-center">
           <div className="2xl:w-10/12 overscroll-none">{children}</div>
+           <Footer />
         </div>
         <SpotifyWiget />
       </body>

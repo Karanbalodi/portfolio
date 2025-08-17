@@ -5,6 +5,8 @@ import { VscMail } from "react-icons/vsc";
 import { FaGithubSquare, FaLinkedin, FaMedium } from "react-icons/fa";
 import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 import { redirect } from "next/navigation";
+import { PiReadCvLogoFill } from "react-icons/pi";
+import { TbFileCv } from "react-icons/tb";
 
 export const SocialNavigation = () => {
   return (
@@ -31,6 +33,14 @@ export const SocialNavigation = () => {
         className="mr-2 text-3xl text-primary cursor-pointer"
         onClick={() => redirect("https://twitter.com/balodikanu125")}
       />
+      <TbFileCv
+        className="mr-2 text-3xl text-primary cursor-pointer"
+        onClick={() => {
+          redirect(
+            "https://drive.google.com/file/d/1TtsA9kZ5abIj3CttRG3HdrS86lL1Iwbe/view?usp=sharing"
+          );
+        }}
+      />
       <VscMail
         className="mr-2 text-4xl text-primary cursor-pointer"
         onClick={() => {
@@ -39,16 +49,6 @@ export const SocialNavigation = () => {
           );
         }}
       />
-      {/* <span
-              className="ml-3 text-xl fill-current text-primary cursor-pointer"
-              onClick={() => {
-                redirect(
-                  "https://drive.google.com/file/d/11okWmJiaY88_OK3uTaN8BieOYP7EggrU/view?usp=sharing"
-                );
-              }}
-            >
-              Resume
-            </span> */}
     </div>
   );
 };

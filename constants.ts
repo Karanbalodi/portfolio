@@ -18,6 +18,24 @@ import Twelve from "@/assets/twelve.webp";
 import Fourteen from "@/assets/fourteen.webp";
 import Fifteen from "@/assets/fifteen.webp";
 import Sixteen from "@/assets/sixteen.webp";
+import Whistler from "@/assets/whistler.webp";
+import Westminster from "@/assets/westminster.webp";
+import StPauls from "@/assets/st-pauls.webp";
+import Silverstone from "@/assets/silverstone.webp";
+import SevenSisters from "@/assets/seven-sisters-cliffs.webp";
+import Picadilly from "@/assets/picadilly-circus.webp";
+import Oxford from "@/assets/oxford.webp";
+import OxfordCamera from "@/assets/oxford-camera.webp";
+import Olomo from "@/assets/olomo.webp";
+import Lucknow from "@/assets/lucknow.webp";
+import DurdleDoor from "@/assets/durdle-door.webp";
+import Cotswolds from "@/assets/cotswolds.webp";
+import CocaCola from "@/assets/coca-cola.webp";
+import Cambridge from "@/assets/cambridge.webp";
+import Bend from "@/assets/bend.webp";
+import Bath from "@/assets/bath.webp";
+import BathCathedral from "@/assets/bath-cathedral.webp";
+import Atlanta from "@/assets/atlanta.webp";
 
 export const workExperience = [
   {
@@ -129,7 +147,7 @@ export const techStack = [
 export const navigation = [
   { title: "Home", path: "/" },
   { title: "Blog", path: "/blog" },
-  { title: "Photography", path: "/photography" },
+  { title: "Travel", path: "/travel" },
 ];
 
 export const education = [
@@ -155,9 +173,9 @@ export const education = [
 export const blogs = [
   {
     title:
-      "What is a PWA and how to convert your React Native app into a PWA using Expo",
+      "🖇️ What is a PWA and how to convert your React Native app into a PWA using Expo",
     description:
-      "A progressive web app is a website that can be installed on the user device and can be used offline. The idea of a PWA was introduced by Steve Jobs in 2007 ...",
+      "A progressive web app is a website that can be installed on the user device and can be used offline. The idea of a PWA was introduced by Steve Jobs in 2007 but it only came into existence when Google introduced PWA in 2015 which uses modern web features like service workers and web app manifests. Modern websites can easily be converted into a PWA and can be used in any browser. Have you noticed these prompts and tabs when you visit Twitter? If the answer is yes, you are already familiar with PWAs and you have used one before. So what are the benefits of PWA? Why companies like Twitter, Uber, Spotify and Flipkart are using PWA? They are faster. They are responsive and work with different screen sizes. They work offline. They behave like native apps and provide features like push notifications etc. You have to maintain a single codebase for iOS , web and Android. Progressive web apps has proven to increase user engagement by 70%. Requirements of an application to be considered a PWA. Your website must be served using HTTPS. It should be installable on any device. It should have an offline page. It should have a manifest file and a service worker",
     date: "June 2020",
     readTime: "5 min read",
     views: "4.5k+ views",
@@ -165,9 +183,9 @@ export const blogs = [
   },
   {
     title:
-      "Javascript Interface(JSI): Overview and need for re-architecture of react native",
+      "🖇️ Javascript Interface(JSI): Overview and need for re-architecture of react native",
     description:
-      "React Native is bundled with multiple advantages like cross-platform suppoert, OTA updates, live reload, cost efficiency etc but the biggest bottleneck in scaling ...",
+      "React Native is bundled with multiple advantages like cross platform support, OTA updates, live reload, cost efficiency etc but the biggest bottleneck in scaling react native applications has been the performance as you add more modules, when application becomes data intensive or when there are multiple passes required over the bridge. But how the current architecture works? React Native architecture depends on three threads: a) UI thread: This is the main application thread which is used for rendering android and iOS views. b) Shadow thread: It is kind of a background thread which calculates the layout of the elements(using Yoga) before rendering on the host platform. c) JS thread: Bundled JS which is responsible for handling all of the logic in your react native application.",
     date: "November 2022",
     readTime: "5 min read",
     views: "8k+ views",
@@ -191,4 +209,22 @@ export const photos = [
   { url: Ten, location: "Centre Island, Toronto" },
   { url: Five, location: "Seattle, Washington" },
   { url: Fifteen, location: "Cape Kiwanda, Oregon" },
+  { url: Whistler, location: "Whistler, Canada" },
+  { url: Westminster, location: "Westminster, London" },
+  { url: StPauls, location: "St Paul's Cathedral, London" },
+  { url: Silverstone, location: "Silverstone Circuit, UK" },
+  { url: SevenSisters, location: "Seven Sisters Cliffs, UK" },
+  { url: Picadilly, location: "Piccadilly Circus, London" },
+  { url: Oxford, location: "Oxford, UK" },
+  { url: OxfordCamera, location: "Oxford Camera Museum, UK" },
+  { url: Olomo, location: "The Alamo, San Antonio" },
+  { url: Lucknow, location: "2023 Cricket Vorld Cup Lucknow, India" },
+  { url: DurdleDoor, location: "Durdle Door, UK" },
+  { url: Cotswolds, location: "Cotswolds, UK" },
+  { url: CocaCola, location: "Coca-Cola World Headquarters, Atlanta" },
+  { url: Cambridge, location: "University of Cambridge, UK" },
+  { url: Bend, location: "Bend, Oregon" },
+  { url: Bath, location: "Bath, UK" },
+  { url: BathCathedral, location: "Bath Abbey Cathedral, UK" },
+  { url: Atlanta, location: "Atlanta, Georgia" },
 ];

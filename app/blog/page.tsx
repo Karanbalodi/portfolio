@@ -3,7 +3,7 @@ import { blogs } from "@/constants";
 
 export default function Blog() {
   return (
-    <section className="mx-4 sm:mx-8 sm:px-4 mt-28">
+    <section className="mx-4 sm:mx-8 sm:px-4 mt-28 border-b border-gray-200 pb-12 min-h-9/10">
       <h1 className="text-primary text-3xl sm:text-4xl font-medium">
         Blogs 📝
       </h1>

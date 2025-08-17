@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { photos } from "@/constants";
 
-const Photography = () => {
+const Travel = () => {
   return (
     <>
       <div className="flex flex-col justify-center sm:mx-24 border-b border-gray-200 pb-24 mt-28">
@@ -14,7 +14,7 @@ const Photography = () => {
         <p className="text-center text-dark-gray text-xs sm:text-lg">
           - Rose Kennedy
         </p>
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4 mt-4">
           {photos.map((item, idx) => (
             <div
               key={idx}
@@ -38,4 +38,4 @@ const Photography = () => {
   );
 };
 
-export default Photography;
+export default Travel;
