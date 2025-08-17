@@ -46,6 +46,8 @@ export const HomeLanding = () => (
           src={Me}
           alt="Karan Balodi"
           style={{ borderRadius: 18, width: 650, height: 600 }}
+          loading="eager"
+          priority
         />
       </NeonGradientCard>
     </main>

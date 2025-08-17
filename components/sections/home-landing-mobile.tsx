@@ -16,6 +16,8 @@ export const HomeLandingMobile = () => (
           alt="Karan Balodi"
           style={{ height: 288, width: 210 }}
           className="-ml-6 -mt-6 rounded"
+          loading="eager"
+          priority
         />
       </div>
 
