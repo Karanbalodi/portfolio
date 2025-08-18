@@ -15,10 +15,10 @@ const Travel = () => {
           - Rose Kennedy
         </p>
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 p-4 mt-4">
-          {photos?.reverse()?.map((item, idx) => (
+          {[...photos]?.reverse()?.map((item, idx) => (
             <div
               key={idx}
-              className="mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-md bg-white"
+              className="mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-md bg-white relative"
             >
               <Image
                 src={item.url}
@@ -28,8 +28,8 @@ const Travel = () => {
                 className="w-full h-auto object-cover"
                 loading="eager"
               />
-              <div className="p-3 border-t border-gray-200 text-sm">
-                <span className="text-red-500">📍</span> {item.location}
+              <div className="absolute bottom-2 left-2 bg-white/30 backdrop-blur-sm text-white text-xs sm:text-sm px-2 py-1 rounded shadow">
+                <span>📍 {item.location}</span>
               </div>
             </div>
           ))}

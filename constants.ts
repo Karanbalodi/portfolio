@@ -218,7 +218,7 @@ export const photos = [
   { url: Oxford, location: "Oxford, UK" },
   { url: OxfordCamera, location: "Oxford Camera Museum, UK" },
   { url: Olomo, location: "The Alamo, San Antonio" },
-  { url: Lucknow, location: "2023 Cricket Vorld Cup Lucknow, India" },
+  { url: Lucknow, location: "2023 Cricket World Cup Lucknow, India" },
   { url: DurdleDoor, location: "Durdle Door, UK" },
   { url: Cotswolds, location: "Cotswolds, UK" },
   { url: CocaCola, location: "Coca-Cola World Headquarters, Atlanta" },

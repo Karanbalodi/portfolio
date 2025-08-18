@@ -37,7 +37,7 @@ export const SocialNavigation = () => {
         className="mr-2 text-3xl text-primary cursor-pointer"
         onClick={() => {
           redirect(
-            "https://drive.google.com/file/d/1TtsA9kZ5abIj3CttRG3HdrS86lL1Iwbe/view?usp=sharing"
+            "https://drive.google.com/file/d/1XAsT0QYhCT8PRqY_sV6PyB337hQMAIRc/view?usp=sharing"
           );
         }}
       />
