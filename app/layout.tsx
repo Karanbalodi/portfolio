@@ -4,6 +4,7 @@ import "./globals.css";
 import { AppNavigation } from "@/components/app-navigation";
 import { SpotifyWiget } from "@/components/spotify";
 import Footer from "@/components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,10 @@ export default function RootLayout({
         <AppNavigation />
         <div className="2xl:flex justify-center">
           <div className="2xl:w-10/12 overscroll-none">{children}</div>
-           <Footer />
+          <Footer />
         </div>
         <SpotifyWiget />
+        <Analytics />
       </body>
     </html>
   );
